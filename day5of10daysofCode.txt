@@ -1,0 +1,169 @@
+#Python Program to Calculate the Average of Numbers in a Given List
+
+a = [1,2,4,8,9]
+
+s = sum(a)
+l = len(a)
+av = s/l
+
+print(av)
+
+n = int(input("Enter number of values who want to enter in a list "))
+s = []
+for i in range(0,n):
+    if i == 0:
+        o = int(input("Enter first value \n"))
+        s.append(o)
+    else:
+        j = int(input("Enter Next value \n "))
+        s.append(j)
+
+
+d = input("Do you want to see average in the output \n Y or N \n")
+
+if d == 'Y':
+    print(sum(s)/len(s))
+else:
+    print("Exit the program")
+
+s
+
+#Python Program to Exchange the Values of Two Numbers Without Using a Temporary Variable
+
+n1 = int(input("Enter first variable "))
+n2 = int(input("Enter second variable "))
+         
+print("Before swap")
+print("These are the values first : {} and second : {}".format(n1,n2))
+
+print("###########")
+
+print("After swap ")
+
+n1,n2 = n2,n1
+         
+print("These are the values first : {} and second : {}".format(n1,n2))
+
+#Python Program to Reverse a Given Number
+
+m = input("Enter first variable ")
+
+n = ""
+
+c = len(m)
+for i in m[::-1]:
+    n = n+i
+    
+print(n)
+
+#Python | Convert a list of Tuples into Dictionary
+
+
+red = [("Nakul",93), ("Shivansh",45), ("Samved",65),("Yash",88), ("Vidit",70), ("Pradeep",52)]
+
+d = {}
+for a,b in red:
+    d[a]=b
+    
+
+d
+
+#reverse number
+
+n=int(input("Enter number: "))
+
+rev=0
+
+while(n>0):
+    dig=n%10
+    print(dig)
+    rev=rev*10+dig
+    print(rev)
+    n=n//10
+    print(n)
+print("Reverse of the number:",rev)
+
+print(800//10)
+
+print(900//10)
+
+#Python groupby method to remove all consecutive duplicates
+
+'''
+ip  : aaaaabbbbbb 
+op : ab
+'''
+
+new = ''
+count = 0
+
+for a in 'aaaaabbbbbb':
+    if a not in new:
+        occ = 'aaaaabbbbbb'.count(a)
+        new = new+a+str(occ)
+
+print(new)
+
+#Python Program to Check Whether a Number is Positive or Negative
+
+def pos_neg(tr):
+    if tr > 0:
+        return 'positive'
+    else:
+        return 'negative'
+
+
+tr = int(input("Enter a number"))
+
+pos_neg(9)
+    
+
+#Python Program to Take in the Marks of 5 Subjects and Display the Grade
+
+def calculate_grade():
+    w = []
+    for i in range(0,5):
+        if i == 0:
+            o = int(input("Enter first value \n"))
+            w.append(o)
+        else:
+            j = int(input("Enter Next value \n "))
+            w.append(j)
+    
+    avg = sum(w)/5
+    print(avg)
+    
+    print('The average marks of the student is {}'.format(avg))
+    
+    return avg
+
+
+avg = calculate_grade()
+print(avg)
+
+
+if(avg >= 90):
+    print("Grade: A")
+elif(avg >= 80 and avg < 90):
+    print("Grade: B")
+elif( avg >= 70 and avg< 80):
+    print("Grade: C")
+elif(avg >= 60 and avg < 70):
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+#Python Program to Print all Numbers in a Range Divisible by a Given Number
+
+n = int(input("Enter a number"))
+
+for x in range(1,1000):
+    if x%n==0:
+        print(x)
+
+#Python Program to Accept Three Digits and Print all Possible Combinations from the Digits
+
+
+n= 431
+
+
